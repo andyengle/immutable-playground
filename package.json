@@ -1,0 +1,38 @@
+{
+  "name": "immutable-playground",
+  "description": "Let's give it a go with Immutable.js",
+  "version": "1.0.0",
+  "contributors": [
+    {
+      "name": "Andy Engle",
+      "email": "andy@andyengle.com"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "private": true,
+  "engines": {
+    "node": ">=6.11.1",
+    "npm": ">=3.x"
+  },
+  "scripts": {
+    "babel-node": "babel-node --presets=latest",
+    "start": "nodemon --exec npm run babel-node -- ./index.js",
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.exacttarget.com/aengle/immutable-schema.git"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "immutable": "3.8.2",
+    "nodemon": "^1.12.1"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  }
+}
